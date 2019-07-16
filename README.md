@@ -76,7 +76,7 @@ The root element of a test, where its overall settings are specified and all the
 
 The following window explain the parts of a Test Plan in JMeter:
 
-![JMeter-TestPlan](images/jm-test-plan.png =700x)
+![JMeter-TestPlan](./images/jm-test-plan.png =700x)
 
 ### **Test Plan Structure**
 
