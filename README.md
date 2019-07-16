@@ -76,15 +76,15 @@ The root element of a test, where its overall settings are specified and all the
 
 The following window explain the parts of a Test Plan in JMeter:
 
-![JMeter-TestPlan](./images/jm-test-plan.png =700x)
+![JMeter-TestPlan](./images/jm-test-plan.png)
 
 ### **Test Plan Structure**
 
-![Structure-Test](./images/structure-test.png =260x)
+![Structure-Test](./images/structure-test.png)
 
 ### **Elements of a Test Plan**
 
-![ComponentsTestScript](images/components-script.png =500x)
+![ComponentsTestScript](images/components-script.png)
 
 #### **Thread Group**
 
@@ -94,11 +94,11 @@ Controls the number of threads (users) JMeter will use to execute a test.
 
 ##### **How to add a Thread Group**
 
-![Add-Thread_group](images/add-thread-group.png =700x)
+![Add-Thread_group](images/add-thread-group.png)
 
 ##### **Properties of a Thread Group**
 
-![PropertiesThreadGroup](images/properties-thread-group.png =700x)
+![PropertiesThreadGroup](images/properties-thread-group.png)
 
 ##### **Configuration Elements**
 
@@ -106,7 +106,7 @@ Used to setup default configurations and variables for later use.
 
 These are the **`config elements`** that JMeter manage:
 
-![ConfigElements](images/config-elements.png =700x)
+![ConfigElements](images/config-elements.png)
 
 ##### **Controllers**
 
@@ -114,33 +114,33 @@ Controllers are the children of **`Thread Grups`** and there are 2 types of cont
 
 - **Logic Controllers.** Let you customize the logic to decide when to send requests.
 
-![LogicControllers](images/logic-controllers.png =700x)
+![LogicControllers](images/logic-controllers.png)
 
 - **Samplers.** Perform a request, generating one or more results.
 
-![Samplers](images/samplers.png =700x)
+![Samplers](images/samplers.png)
 
 ##### **Timer**
 
 Under a **`sampler`** or under a **`Thread Group`**, there are **`Timers`**, that introduce a delay (pause) between requests.
 
-![Timers](images/timers.png =700x)
+![Timers](images/timers.png)
 
 **Timer Example:**
 
-![TimerExample](images/timer-example.png =700x)
+![TimerExample](images/timer-example.png)
 
 ##### **Assertion**
 
 Assertions validate a response is as expected.
 
-![Assertions](images/assertions.png =700x)
+![Assertions](images/assertions.png)
 
 #### **Listener**
 
 Listen to responses and aggregate metrics.
 
-![Listeners](images/listeners.png =700x)
+![Listeners](images/listeners.png)
 
 ### **Execution Order and Rules**
 
@@ -149,16 +149,16 @@ Listen to responses and aggregate metrics.
 - **Ordered**
   - Controllers and Samplers
 	
-	![OrderedElementsExample](images/ordered-elements-example.png =500x)
+	![OrderedElementsExample](images/ordered-elements-example.png)
 
 - **Hierarchical (scoped)**
   - Everything else (config elements, assertions, timers, etc.)
 
-	![HierarchiElementsExample](images/hierarchi-elements-example.png =500x)
+	![HierarchiElementsExample](images/hierarchi-elements-example.png)
 
 #### **Execution Order**
 
-![ExecutionOrder](images/execution-order.png =350x)
+![ExecutionOrder](images/execution-order.png)
 
 >**IMPORTANT:** The last 3 elements do not execute if the server is not responding.
 
@@ -170,7 +170,7 @@ Listen to responses and aggregate metrics.
 
 **Example:**
 
-![ConfigurationElementsExample](images/configuration-elements-example.png =700x)
+![ConfigurationElementsExample](images/configuration-elements-example.png)
 
 #### **General Rules**
 
@@ -181,19 +181,19 @@ Listen to responses and aggregate metrics.
 
 **Example 1:**
 
-![ExecutionOrderSample1](images/execution-order-sample1.png =600x)
+![ExecutionOrderSample1](images/execution-order-sample1.png)
 
 **Example 2:**
 
-![ExecutionOrderSample2](images/execution-order-sample2.png =600x)
+![ExecutionOrderSample2](images/execution-order-sample2.png)
 
 **Example 3:**
 
-![ExecutionOrderSample3](images/execution-order-sample3.png =600x)
+![ExecutionOrderSample3](images/execution-order-sample3.png)
 
 **Example 4:**
 
-![ExecutionOrderSample4](images/execution-order-sample4.png =600x)
+![ExecutionOrderSample4](images/execution-order-sample4.png)
 
 ### **Test Fragments**
 
