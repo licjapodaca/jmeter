@@ -2,12 +2,12 @@
 Repository to practice the using of JMeter, an opensource project for many different of tests, like Stress, Performance and Load tests.
 
 - [**Apache - JMeter**](#Apache---JMeter)
-- [**Curso de JMeter**](#Curso-de-JMeter)
-	- [**Instalacion de JMeter**](#Instalacion-de-JMeter)
-		- [**Pre-requisitos**](#Pre-requisitos)
-		- [**Instalacion**](#Instalacion)
-		- [**Post-Instalacion**](#Post-Instalacion)
-	- [**Tipos de Prueba**](#Tipos-de-Prueba)
+- [**Using JMeter for Different Tests**](#Using-JMeter-for-Different-Tests)
+	- [**How to install Apache JMeter**](#How-to-install-Apache-JMeter)
+		- [**Pre-requisites**](#Pre-requisites)
+		- [**Installation**](#Installation)
+		- [**Post-Installation**](#Post-Installation)
+	- [**Types of Tests**](#Types-of-Tests)
 		- [**Smoke Test**](#Smoke-Test)
 		- [**Load Test**](#Load-Test)
 		- [**Stress Test**](#Stress-Test)
@@ -32,21 +32,21 @@ Repository to practice the using of JMeter, an opensource project for many diffe
 		- [**Test Fragments**](#Test-Fragments)
 	- [**Important Application Performance Metrics**](#Important-Application-Performance-Metrics)
 
-# **Curso de JMeter**
+# **Using JMeter for Different Tests**
 
-## **Instalacion de JMeter**
+## **How to install Apache JMeter**
 
-### **Pre-requisitos**
+### **Pre-requisites**
 
-### **Instalacion**
+### **Installation**
 
-### **Post-Instalacion**
+### **Post-Installation**
 
 You must modify the variable called `proxy.cert.validity` from the file called `jmeter.properties` located at the JMETER home directory inside the `bin` folder, specify the amount of time in days of the JMETER certificate expiracy.
 
 Then, from a Http(s) Script Recorder generate the certificate that you need to install in Mozilla Firefox to record HTTPS websits.
 
-## **Tipos de Prueba**
+## **Types of Tests**
 
 There are so many types of Stress and Performance tests, like Smoke Tests, Load Tests, Stress Tests, Spike Tests and Endurance Tests.
 
