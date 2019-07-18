@@ -38,13 +38,28 @@ Repository to practice the using of JMeter, an opensource project for many diffe
 
 ### **Pre-requisites**
 
+- Install Java SE JDK v8 ([**https://www.oracle.com/technetwork/java/javase/downloads/index.html**](https://www.oracle.com/technetwork/java/javase/downloads/index.html))
+- Download and extract JMeter `v5.1.1` binaries ([**https://jmeter.apache.org/download_jmeter.cgi**](https://jmeter.apache.org/download_jmeter.cgi))
+
 ### **Installation**
+
+For best practices, recomends that you extract the JMeter binaries at root level of your hard drive:
+
+```shell
+C:\JMeter\> 
+```
 
 ### **Post-Installation**
 
-You must modify the variable called `proxy.cert.validity` from the file called `jmeter.properties` located at the JMETER home directory inside the `bin` folder, specify the amount of time in days of the JMETER certificate expiracy.
+- Download the Plugin Manager jar file ([**https://jmeter-plugins.org**](https://jmeter-plugins.org/))
 
-Then, from a Http(s) Script Recorder generate the certificate that you need to install in Mozilla Firefox to record HTTPS websits.
+	The downloaded file must be locate at `JMETER_HOME\lib\ext` folder once you extract the JMeter binaries.
+
+	Recommended plugins to install from `Plugin Manager`:
+
+	- 
+
+- You must modify the variable called `proxy.cert.validity` from the file called `jmeter.properties` located at the JMETER home directory inside the `bin` folder, specify the amount of time in days of the JMETER certificate expiracy. Then, from a Http(s) Script Recorder generate the certificate that you need to install in Mozilla Firefox to record HTTPS websits.
 
 ## **Types of Tests**
 
