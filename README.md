@@ -31,6 +31,8 @@ Repository to practice the using of JMeter, an opensource project for many diffe
 			- [**General Rules**](#General-Rules)
 		- [**Test Fragments**](#Test-Fragments)
 	- [**Important Application Performance Metrics**](#Important-Application-Performance-Metrics)
+- [**JMeter Distributed Mode**](#JMeter-Distributed-Mode)
+	- [**JMeter Distributed Mode Architecture**](#JMeter-Distributed-Mode-Architecture)
 
 # **Using JMeter for Different Tests**
 
@@ -57,7 +59,7 @@ C:\JMeter\>
 
 	Recommended plugins to install from `Plugin Manager`:
 
-	- 
+	- Custom Thread Groups
 
 - You must modify the variable called `proxy.cert.validity` from the file called `jmeter.properties` located at the JMETER home directory inside the `bin` folder, specify the amount of time in days of the JMETER certificate expiracy. Then, from a Http(s) Script Recorder generate the certificate that you need to install in Mozilla Firefox to record HTTPS websits.
 
@@ -239,3 +241,15 @@ These metrics are important to measure the server performance in terms of:
 - Memory
 - Network
 
+# **JMeter Distributed Mode**
+
+There are certain limitations to the number of users you can run, with the CPU and RAM configuration for a single machine.
+
+## **JMeter Distributed Mode Architecture**
+
+![DistributedMode](images/distributed-mode.png)
+
+**Resource sites:**
+
+- [**http://blazedemo.com**](http://blazedemo.com)
+- [**https://the-internet.herokuapp.com/login**](https://the-internet.herokuapp.com/login)
