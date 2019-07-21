@@ -1,38 +1,41 @@
 # **Apache - JMeter**
 Repository to practice the using of JMeter, an opensource project for many different of tests, like Stress, Performance and Load tests.
 
-- [**Apache - JMeter**](#Apache---JMeter)
-- [**Using JMeter for Different Tests**](#Using-JMeter-for-Different-Tests)
-	- [**How to install Apache JMeter**](#How-to-install-Apache-JMeter)
-		- [**Pre-requisites**](#Pre-requisites)
-		- [**Installation**](#Installation)
-		- [**Post-Installation**](#Post-Installation)
-	- [**Types of Tests**](#Types-of-Tests)
-		- [**Smoke Test**](#Smoke-Test)
-		- [**Load Test**](#Load-Test)
-		- [**Stress Test**](#Stress-Test)
-		- [**Spike Test**](#Spike-Test)
-		- [**Endurance Test**](#Endurance-Test)
-	- [**Test Plan**](#Test-Plan)
-		- [**Test Plan Structure**](#Test-Plan-Structure)
-		- [**Elements of a Test Plan**](#Elements-of-a-Test-Plan)
-			- [**Thread Group**](#Thread-Group)
-				- [**How to add a Thread Group**](#How-to-add-a-Thread-Group)
-				- [**Properties of a Thread Group**](#Properties-of-a-Thread-Group)
-				- [**Configuration Elements**](#Configuration-Elements)
-				- [**Controllers**](#Controllers)
-				- [**Timer**](#Timer)
-				- [**Assertion**](#Assertion)
-			- [**Listener**](#Listener)
-		- [**Execution Order and Rules**](#Execution-Order-and-Rules)
-			- [**Types of Elements in the Tree Structure**](#Types-of-Elements-in-the-Tree-Structure)
-			- [**Execution Order**](#Execution-Order)
-			- [**Configuration Elements Rules**](#Configuration-Elements-Rules)
-			- [**General Rules**](#General-Rules)
-		- [**Test Fragments**](#Test-Fragments)
-	- [**Important Application Performance Metrics**](#Important-Application-Performance-Metrics)
-- [**JMeter Distributed Mode**](#JMeter-Distributed-Mode)
-	- [**JMeter Distributed Mode Architecture**](#JMeter-Distributed-Mode-Architecture)
+- [**Apache - JMeter**](#apache---jmeter)
+- [**Using JMeter for Different Tests**](#using-jmeter-for-different-tests)
+	- [**How to install Apache JMeter**](#how-to-install-apache-jmeter)
+		- [**Pre-requisites**](#pre-requisites)
+		- [**Installation**](#installation)
+		- [**Post-Installation**](#post-installation)
+	- [**Types of Tests**](#types-of-tests)
+		- [**Smoke Test**](#smoke-test)
+		- [**Load Test**](#load-test)
+		- [**Stress Test**](#stress-test)
+		- [**Spike Test**](#spike-test)
+		- [**Endurance Test**](#endurance-test)
+	- [**Test Plan**](#test-plan)
+		- [**Test Plan Structure**](#test-plan-structure)
+		- [**Elements of a Test Plan**](#elements-of-a-test-plan)
+			- [**Thread Group**](#thread-group)
+				- [**How to add a Thread Group**](#how-to-add-a-thread-group)
+				- [**Properties of a Thread Group**](#properties-of-a-thread-group)
+				- [**Configuration Elements**](#configuration-elements)
+				- [**Controllers**](#controllers)
+				- [**Timer**](#timer)
+				- [**Assertion**](#assertion)
+			- [**Listener**](#listener)
+		- [**Execution Order and Rules**](#execution-order-and-rules)
+			- [**Types of Elements in the Tree Structure**](#types-of-elements-in-the-tree-structure)
+			- [**Execution Order**](#execution-order)
+			- [**Configuration Elements Rules**](#configuration-elements-rules)
+			- [**General Rules**](#general-rules)
+		- [**Test Fragments**](#test-fragments)
+	- [**Important Application Performance Metrics**](#important-application-performance-metrics)
+- [How to record actions in JMeter](#how-to-record-actions-in-jmeter)
+	- [**Http(s) Test Script Recorder**](#https-test-script-recorder)
+	- [**BlazeMeter Chrome Extension**](#blazemeter-chrome-extension)
+- [**JMeter Distributed Mode**](#jmeter-distributed-mode)
+	- [**JMeter Distributed Mode Architecture**](#jmeter-distributed-mode-architecture)
 
 # **Using JMeter for Different Tests**
 
@@ -57,11 +60,9 @@ C:\JMeter\>
 
 	The downloaded file must be locate at `JMETER_HOME\lib\ext` folder once you extract the JMeter binaries.
 
-	Recommended plugins to install from `Plugin Manager`:
+- Recommended plugins to install from `Plugin Manager`:
 
-	- Custom Thread Groups
-
-- You must modify the variable called `proxy.cert.validity` from the file called `jmeter.properties` located at the JMETER home directory inside the `bin` folder, specify the amount of time in days of the JMETER certificate expiracy. Then, from a Http(s) Script Recorder generate the certificate that you need to install in Mozilla Firefox to record HTTPS websits.
+  - Custom Thread Groups
 
 ## **Types of Tests**
 
@@ -240,6 +241,29 @@ These metrics are important to measure the server performance in terms of:
 - CPU
 - Memory
 - Network
+
+# How to record actions in JMeter
+
+There are two ways to record actions in JMeter:
+
+- **Http(s) Test Script Recorder**
+- **BlazeMeter Chrome Extension**
+
+## **Http(s) Test Script Recorder**
+
+You need to follow some requirments for this kind of recorder tool:
+
+- You need Mozilla Firefox to use its Proxy Server.
+- Configure the `proxy.cert.validity` of the certificate `ApacheJMeterTemporaryRootCA.crt` in the file `JMETER_HOME\bin\jmeter.properties`.
+- Install the last certificate in Firefox.
+- Configure the Proxy Server in Firefox.
+
+## **BlazeMeter Chrome Extension**
+
+Requirments for this tool:
+
+- Install this extension from ([**https://chrome.google.com/webstore/detail/blazemeter-the-continuous/mbopgmdnpcbohhpnfglgohlbhfongabi?hl=en**](https://chrome.google.com/webstore/detail/blazemeter-the-continuous/mbopgmdnpcbohhpnfglgohlbhfongabi?hl=en))
+- Subscribe in `blazemeter.com` to create a `BlazeMeter` user until you successfully install the Chrome Extension.
 
 # **JMeter Distributed Mode**
 
