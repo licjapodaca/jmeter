@@ -82,7 +82,7 @@ The next step is to decide what kind of performance test your are going to execu
 
 Always you are going to execute first a `Smoke Test`, the purpose of this test is to verify if the complete script test is correctly configured.
 
-
+![SmokeTest](images/smoke-test.png)
 
 ### **Load Test**
 
@@ -98,11 +98,15 @@ Is a test that test the application with loads beyond its normal usage to see up
 
 ### **Spike Test**
 
+Is a test when an application is subjected to brief periods of sudden increments in the load beyond its maximum capacity to see if the application is robust enough to work correctly during and after the Spike.
 
+![SpikeTest](images/spike-test.png)
 
 ### **Endurance Test**
 
+Is a test when an application is subjected to load within its limits, but for long duration, hours, or in some cases days, to see if the application has memory leaks or doesn't properly close database or network connections.
 
+![EnduranceTest](images/endurance-test.png)
 
 ## **Test Plan**
 
