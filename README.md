@@ -58,27 +58,43 @@ C:\JMeter\>
 
 - Download the Plugin Manager jar file ([**https://jmeter-plugins.org**](https://jmeter-plugins.org/))
 
-	The downloaded file must be locate at `JMETER_HOME\lib\ext` folder once you extract the JMeter binaries.
+	The downloaded file must be locate at **`JMETER_HOME\lib\ext`** folder once you extract the JMeter binaries.
 
-- Recommended plugins to install from `Plugin Manager`:
+- Recommended plugins to install from **`Plugin Manager`**:
 
   - Custom Thread Groups
+  - 3 Basic Graphs
+  - Throughput Shaping Timer
+  - Dummy Sampler
 
 ## **Types of Tests**
 
-There are so many types of Stress and Performance tests, like Smoke Tests, Load Tests, Stress Tests, Spike Tests and Endurance Tests.
+There are so many types of `Performance Tests`, like `Smoke Tests`, `Load Tests`, `Stress Tests`, `Spike Tests` and `Endurance Tests`.
+
+**The two ways to generate load**
+
+- Number of users
+- Number of Requests
+
+The next step is to decide what kind of performance test your are going to execute:
 
 ### **Smoke Test**
+
+Always you are going to execute first a `Smoke Test`, the purpose of this test is to verify if the complete script test is correctly configured.
 
 
 
 ### **Load Test**
 
+Is a test that is performed at a specific load level. Usually you'll perform load test at many load levels to monitor the behavior of the application.
 
+![LoadTest](images/load-test.png)
 
 ### **Stress Test**
 
+Is a test that test the application with loads beyond its normal usage to see up to which point it stays stable and responsive. In a stress test you can add users in steps or constantly over a period of time or you can add a lot of users during that long period of time and see at what point the application stop working.
 
+![StressTest](images/stress-test.png)
 
 ### **Spike Test**
 
