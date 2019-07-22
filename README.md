@@ -107,9 +107,9 @@ Is a test that is performed at a specific load level. Usually you'll perform loa
 
 ![LoadTest](images/load-test.png)
 
->**Note:** >**Note:** For this type of test, it requires more advance `Threads Groups`, like `Throughput Shaping Timer`.
+>**Note:** >**Note:** For this type of test, it requires more advance `Threads Groups`.
 
-
+![LoadTestThreadGroup](images/load-test-thread-group.png)
 
 ### **Stress Test**
 
