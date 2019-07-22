@@ -1,5 +1,5 @@
 # **Apache - JMeter**
-Repository to practice the using of JMeter, an opensource project for many different of tests, like Stress, Performance and Load tests.
+Repository to practice the using of JMeter, an Open-Source project for many different of tests, like Stress, Performance and Load tests.
 
 - [**Apache - JMeter**](#apache---jmeter)
 - [**Using JMeter for Different Tests**](#using-jmeter-for-different-tests)
@@ -189,7 +189,7 @@ These are the **`config elements`** that JMeter manage:
 
 ##### **Controllers**
 
-Controllers are the children of **`Thread Grups`** and there are 2 types of controllers:
+Controllers are the children of **`Thread Groups`** and there are 2 types of controllers:
 
 - **Logic Controllers.** Let you customize the logic to decide when to send requests.
 
@@ -233,7 +233,7 @@ Listen to responses and aggregate metrics.
 - **Hierarchical (scoped)**
   - Everything else (config elements, assertions, timers, etc.)
 
-	![HierarchiElementsExample](images/hierarchi-elements-example.png)
+	![HierarchyElementsExample](images/hierarchi-elements-example.png)
 
 #### **Execution Order**
 
@@ -312,7 +312,7 @@ There are two ways to record actions in JMeter:
 
 ## **Http(s) Test Script Recorder**
 
-You need to follow some requirments for this kind of recorder tool:
+You need to follow some requirements for this kind of recorder tool:
 
 - You need Mozilla Firefox to use its Proxy Server.
 - Configure the `proxy.cert.validity` of the certificate `ApacheJMeterTemporaryRootCA.crt` in the file `JMETER_HOME\bin\jmeter.properties`.
@@ -321,7 +321,7 @@ You need to follow some requirments for this kind of recorder tool:
 
 ## **BlazeMeter Chrome Extension**
 
-Requirments for this tool:
+Requirements for this tool:
 
 - Install this extension from ([**https://chrome.google.com/webstore/detail/blazemeter-the-continuous/mbopgmdnpcbohhpnfglgohlbhfongabi?hl=en**](https://chrome.google.com/webstore/detail/blazemeter-the-continuous/mbopgmdnpcbohhpnfglgohlbhfongabi?hl=en))
 - Subscribe in `blazemeter.com` to create a `BlazeMeter` user until you successfully install the Chrome Extension.
