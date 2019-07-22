@@ -34,6 +34,10 @@ Repository to practice the using of JMeter, an opensource project for many diffe
 - [How to record actions in JMeter](#how-to-record-actions-in-jmeter)
 	- [**Http(s) Test Script Recorder**](#https-test-script-recorder)
 	- [**BlazeMeter Chrome Extension**](#blazemeter-chrome-extension)
+- [**Execute the Tests in CLI mode**](#execute-the-tests-in-cli-mode)
+	- [**APDEX - Dashboard**](#apdex---dashboard)
+		- [**APDEX Response Time Classification**](#apdex-response-time-classification)
+		- [**APDEX Score Formula**](#apdex-score-formula)
 - [**JMeter Distributed Mode**](#jmeter-distributed-mode)
 	- [**JMeter Distributed Mode Architecture**](#jmeter-distributed-mode-architecture)
 
@@ -42,6 +46,8 @@ Repository to practice the using of JMeter, an opensource project for many diffe
 ## **How to install Apache JMeter**
 
 ### **Pre-requisites**
+
+- Copy and clone the repository **`ODataProject`** from this URL ([**https://github.com/licjapodaca/ODataProject**](https://github.com/licjapodaca/ODataProject)) this will be the API Rest project that we will test during the course.
 
 - Install Java SE JDK v8 ([**https://www.oracle.com/technetwork/java/javase/downloads/index.html**](https://www.oracle.com/technetwork/java/javase/downloads/index.html))
 - Download and extract JMeter `v5.1.1` binaries ([**https://jmeter.apache.org/download_jmeter.cgi**](https://jmeter.apache.org/download_jmeter.cgi))
@@ -319,6 +325,26 @@ Requirments for this tool:
 
 - Install this extension from ([**https://chrome.google.com/webstore/detail/blazemeter-the-continuous/mbopgmdnpcbohhpnfglgohlbhfongabi?hl=en**](https://chrome.google.com/webstore/detail/blazemeter-the-continuous/mbopgmdnpcbohhpnfglgohlbhfongabi?hl=en))
 - Subscribe in `blazemeter.com` to create a `BlazeMeter` user until you successfully install the Chrome Extension.
+
+# **Execute the Tests in CLI mode**
+
+To execute the tests in CLI mode, you just need to type the following command with its correct parameters:
+
+```shell
+jmeter -n -t test5.jmx -l results.csv -e -o output -f
+```
+
+## **APDEX - Dashboard**
+
+APDEX or **`Application Performance Index`** dashboard, measures user's satisfaction, taking into account the response time of the application.
+
+### **APDEX Response Time Classification**
+
+![APDEXClassification](images/apdex-response-time-classification.png)
+
+### **APDEX Score Formula**
+
+![APDEXScoreFormula](images/apdex-score-formula.png)
 
 # **JMeter Distributed Mode**
 
