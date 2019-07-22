@@ -1,2 +1,8 @@
 {
+	"cSpell.words": [
+		"JMETER",
+		"httpclient",
+		"retrycount",
+		"stalecheck"
+	]
 }

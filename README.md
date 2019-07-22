@@ -48,7 +48,7 @@ Repository to practice the using of JMeter, an opensource project for many diffe
 
 ### **Installation**
 
-For best practices, recomends that you extract the JMeter binaries at root level of your hard drive:
+For best practices, recommends that you extract the JMeter binaries at root level of your hard drive:
 
 ```shell
 C:\JMeter\> 
@@ -66,6 +66,23 @@ C:\JMeter\>
   - 3 Basic Graphs
   - Throughput Shaping Timer
   - Dummy Sampler
+
+- In every Test Plan, use the **`Http Request Defaults`** config element to use the **`HttpClient4`** implementation.
+
+- Uncomment from the file **`JMETER_HOME\bin\jmeter.properties`** the following lines:
+
+```properties
+hc.parameters.file=hc.parameters
+httpclient4.retrycount=10
+```
+
+- Add at the end of the file **`JMETER_HOME\bin\hc.parameters`** the following line:
+
+```properties
+http.connection.stalecheck$Boolean=true
+```
+
+- Finally, restart **JMETER**.
 
 ## **Types of Tests**
 
@@ -90,11 +107,21 @@ Is a test that is performed at a specific load level. Usually you'll perform loa
 
 ![LoadTest](images/load-test.png)
 
+>**Note:** >**Note:** For this type of test, it requires more advance `Threads Groups`, like `Throughput Shaping Timer`.
+
+
+
 ### **Stress Test**
 
 Is a test that test the application with loads beyond its normal usage to see up to which point it stays stable and responsive. In a stress test you can add users in steps or constantly over a period of time or you can add a lot of users during that long period of time and see at what point the application stop working.
 
 ![StressTest](images/stress-test.png)
+
+>**Note:** For this type of test, it requires more advance `Threads Groups`, like `Ultimate Thread Group` or `Concurrency Thread Group`.
+
+![StressConcurrencyThreadGroup](images/stress-test-concurrency-thread-group.png)
+
+![StressUltimateThreadGroup](images/stress-test-ultimate-thread-group.png)
 
 ### **Spike Test**
 
@@ -102,11 +129,19 @@ Is a test when an application is subjected to brief periods of sudden increments
 
 ![SpikeTest](images/spike-test.png)
 
+>**Note:** For this type of test, it requires more advance `Threads Groups`, like `Ultimate Thread Group`.
+
+![UltimateThreadGroup](images/spike-test-ultimate-thread-group.png)
+
 ### **Endurance Test**
 
 Is a test when an application is subjected to load within its limits, but for long duration, hours, or in some cases days, to see if the application has memory leaks or doesn't properly close database or network connections.
 
 ![EnduranceTest](images/endurance-test.png)
+
+For this type of test, it requires more advance `Threads Groups`, like `Ultimate Thread Group`.
+
+![EnduranceTestUltimaThreadGroup](images/endurance-test-ultimate-thread-group.png)
 
 ## **Test Plan**
 
